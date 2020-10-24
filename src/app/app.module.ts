@@ -8,6 +8,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {SlideshowComponent} from './shop/slideshow/slideshow.component';
 import {RegistrationComponent} from './shop/registration/registration.component';
+import {ShoutoutComponent} from './shop/shoutout/shoutout.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {RegistrationComponent} from './shop/registration/registration.component'
     HeaderComponent,
     SlideshowComponent,
     RegistrationComponent,
+    ShoutoutComponent,
   ],
   imports: [
     BrowserModule,
