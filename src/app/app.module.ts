@@ -14,6 +14,8 @@ import {AddnewshopComponent} from './shop/addnewshop/addnewshop.component';
 import {ShopdetailComponent} from './shop/shopdetail/shopdetail.component';
 import {ContactusComponent} from './shop/contactus/contactus.component';
 import {AboutusComponent} from './shop/aboutus/aboutus.component';
+import {HomeComponent} from './shop/home/home.component';
+import {FooterComponent} from './shop/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import {AboutusComponent} from './shop/aboutus/aboutus.component';
     ShopdetailComponent,
     ContactusComponent,
     AboutusComponent,
+    HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
