@@ -7,10 +7,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
+  registerUserForm: any = {};
+  userType = '';
+  firstName = '';
+  lastName = '';
+  userGender = '';
+  userEmail = '';
+
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
+  registerUserFromHomePage = (user) => {
+    console.log(user);
+  };
 }
