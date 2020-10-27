@@ -1,0 +1,38 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "userType": "Visitor Type...",
+      "firstName": "MARCELO",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com"
+    },
+    {
+      "userType": "Visitor Type",
+      "firstName": "ALEXANDRE",
+      "lastName": "BARROS",
+      "userGender": "He",
+      "userEmail": "marceloribeiro1@globo.com",
+      "id": 2
+    },
+    {
+      "userType": "Visitor Type...",
+      "firstName": "BARROS",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 3
+    },
+    {
+      "userType": "visitor",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 4
+    }
+  ],
+  "shop": [],
+  "comments": []
+}
