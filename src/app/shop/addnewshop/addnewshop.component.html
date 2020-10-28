@@ -7,47 +7,62 @@
   </div>
   <form #newShop="ngForm" (ngSubmit)="addNewShop(newShop.value)">
     <div class="form-group">
+      <input type="text" name="ShopOwner" [(ngModel)]="shopOwner" class="form-control" readonly>
+    </div> <!--// SHOP OWNER-->
+    <div class="form-group">
       <input type="text" name="shopName" placeholder="Shop Name..." [(ngModel)]="shopName"
-             class="form-control container"> <!--// SHOP NAME-->
-    </div>
+             class="form-control container">
+    </div> <!--// SHOP NAME-->
     <div class="form-group">
       <input type="text" class="form-control" name="address1" placeholder="Address" [(ngModel)]="address1">
-      <!--// ADDRESS 1-->
-    </div>
+
+    </div> <!--// ADDRESS 1-->
     <div class="form-group">
       <input type="text" class="form-control" name="address2" placeholder="Complement - Address" [(ngModel)]="address2">
-      <!--// ADDRESS 2-->
-    </div>
+
+    </div>  <!--// ADDRESS 2-->
     <div class="form-row">
       <div class="form-group col-md-6">
         <input type="text" class="form-control" name="city" placeholder="City" [(ngModel)]="city"> <!--// CITY-->
-      </div>
+      </div> <!--// CITY -->
       <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="state" placeholder="State" [(ngModel)]="state"> <!--// STATE-->
-      </div>
+        <input type="text" class="form-control" name="state" placeholder="State" [(ngModel)]="state">
+      </div> <!--// STATE -->
       <div class="form-group col-md-3">
         <input type="text" class="form-control" name="pincode" placeholder="Pin Code" [(ngModel)]="pincode">
-        <!--// PIN CODE-->
-      </div>
+
+      </div> <!--// PIN CODE -->
     </div>
     <div class="form-group">
       <input type="text" class="form-control" name="services1"
              placeholder="Add business services (separated by comma ( , )" [(ngModel)]="services1">
-    </div>
+    </div> <!--// SHOP SERVICE 1 -->
     <div class="form-group">
       <input type="text" class="form-control" name="services2"
              placeholder="Add more business services (separated by comma ( , )" [(ngModel)]="services2">
-    </div>
+    </div> <!--// SHOP SERVICE 2 -->
     <div class="form-group">
-      <textarea class="form-control" name="description" placeholder="Shop description..." rows="4" [(ngModel)]="description"></textarea>
-    </div>
+      <textarea class="form-control" name="description" placeholder="Shop description..." rows="4"
+                [(ngModel)]="description"></textarea>
+    </div> <!--// SHOP DESCRIPTION -->
     <form>
       <div class="form-group">
         <label for="exampleFormControlFile1">Shop picture</label>
-        <input type="file" class="form-control-file" name="shopPicture" [(ngModel)]="shopPicture" accept="image/x-png, image/jpeg">
+        <input type="file" class="form-control-file" name="shopPicture" [(ngModel)]="shopPicture"
+               accept="image/x-png, image/jpeg">
       </div>
-    </form>
-    <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+    </form> <!--// ADD PICTURE -->
+    <div class="form-row">
+      <div class="form-group col-md-5">
+        <button class="btn btn-success btn-lg btn-block">Add Shop</button>
+      </div> <!--// ADD SHOP BUTTON -->
+      <div class="form-group col-md-2">
+        <button class="btn btn-primary btn-lg btn-block">Clear Form</button>
+      </div> <!--// CLEAR SHOP BUTTON -->
+      <div class="form-group col-md-5">
+        <button class="btn btn-secondary btn-lg btn-block">Reset Shop</button>
+      </div> <!--// RESET SHOP BUTTON -->
+    </div>
   </form>
   <br>
 </div>

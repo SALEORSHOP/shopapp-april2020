@@ -8,7 +8,6 @@ import {Component, OnInit} from '@angular/core';
 export class AddnewshopComponent implements OnInit {
 
   newShop: any = { };
-
   shopName: string;
   address1: string;
   address2: string;
@@ -19,6 +18,7 @@ export class AddnewshopComponent implements OnInit {
   services2: string;
   description: string;
   shopPicture: string;
+  shopOwner: 'ShopOwner';
 
   constructor() {
   }
@@ -26,7 +26,7 @@ export class AddnewshopComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addNewShop = (value: any) => {
-    console.log(this.newShop);
+  addNewShop = (shop: any) => {
+    console.log(shop);
   }
 }
