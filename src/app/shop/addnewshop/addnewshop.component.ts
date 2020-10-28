@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ShopService } from '../service/shop.service';
 
 @Component({
   selector: 'app-addnewshop',
@@ -20,13 +21,17 @@ export class AddnewshopComponent implements OnInit {
   shopPicture: string;
   shopOwner: 'ShopOwner';
 
-  constructor() {
-  }
+  constructor(private shopService: ShopService) {  }
 
   ngOnInit(): void {
   }
 
   addNewShop = (shop: any) => {
     console.log(shop);
+    this.shopService.addShop(shop).subscribe(response => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    });
   }
 }

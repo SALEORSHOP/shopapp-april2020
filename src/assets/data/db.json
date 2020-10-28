@@ -55,6 +55,30 @@
       "userGender": "he",
       "userEmail": "storageribeiro2@gmail.com",
       "id": 7
+    },
+    {
+      "shopName": "SHOP ACALAN",
+      "address1": "Avenida Bernardo Vieira de Melo",
+      "address2": "APTO",
+      "city": "Jaboatão dos Guararapes",
+      "state": "PE",
+      "pincode": "54410010",
+      "services1": "Business",
+      "services2": "Load - Business",
+      "description": "...",
+      "id": 8
+    },
+    {
+      "shopName": "SHOP ACALAN",
+      "address1": "Avenida Bernardo Vieira de Melo",
+      "address2": "APTO",
+      "city": "Jaboatão dos Guararapes",
+      "state": "PE",
+      "pincode": "54410010",
+      "services1": "Business",
+      "services2": "Load - Business",
+      "description": "...",
+      "id": 9
     }
   ],
   "shop": [],

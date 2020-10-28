@@ -23,10 +23,10 @@ export class RegistrationComponent implements OnInit {
 
   registerUserFromHomePage = (user) => {
     console.log(user);
-    this.registerService.registerUser(user).subscribe(response=> {
+    this.registerService.registerUser(user).subscribe(response => {
       console.log(response);
     }, error => {
-      console.log(error)
-    })
+      console.log(error);
+    });
   }
 }
