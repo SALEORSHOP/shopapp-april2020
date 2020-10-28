@@ -36,7 +36,7 @@
              placeholder="name@example.com" required type="email">
     </div>    <br>
     <div style="width:350px;" align="center" size="">
-      <button [disabled]="!registerUserForm.valid" class="btn btn-primary btn-lg" type="submit">Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="!registerUserForm.valid">Submit</button>
     </div>
   </form>
   <br>
