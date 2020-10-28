@@ -7,10 +7,15 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AddnewshopComponent implements OnInit {
 
+  newShop: any = { };
+
+  shopName: string;
+
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
+  addNewShop = (value: any) => {  };
 }

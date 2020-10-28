@@ -31,6 +31,30 @@
       "userGender": "he",
       "userEmail": "storageribeiro2@gmail.com",
       "id": 4
+    },
+    {
+      "userType": "visitor",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 5
+    },
+    {
+      "userType": "Visitor Type...",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 6
+    },
+    {
+      "userType": "Visitor Type...",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 7
     }
   ],
   "shop": [],

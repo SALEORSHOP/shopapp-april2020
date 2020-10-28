@@ -1,12 +1,55 @@
-<p>addnewshop works!</p>
-
 <div class="container">
-  <h1>Add New Shop!!!</h1>
-
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
+      <h1 class="display-4">Add New Shop</h1>
       <p class="lead">This is a modified jumbotron that ...</p>
     </div>
   </div>
+  <form #newShop="ngForm" (ngSubmit)="addNewShop(newShop.value)">
+    <div class="form-group">
+      <input type="text" name="shopName" placeholder="Shop Name..." [(ngModel)]="shopName"
+             class="form-control container">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">City</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">State</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Zipcode</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
 </div>
