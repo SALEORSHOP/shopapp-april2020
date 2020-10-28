@@ -8,36 +8,46 @@
   <form #newShop="ngForm" (ngSubmit)="addNewShop(newShop.value)">
     <div class="form-group">
       <input type="text" name="shopName" placeholder="Shop Name..." [(ngModel)]="shopName"
-             class="form-control container">
+             class="form-control container"> <!--// SHOP NAME-->
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+      <input type="text" class="form-control" name="address1" placeholder="Address" [(ngModel)]="address1">
+      <!--// ADDRESS 1-->
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Complement - Address">
+      <input type="text" class="form-control" name="address2" placeholder="Complement - Address" [(ngModel)]="address2">
+      <!--// ADDRESS 2-->
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <input type="email" class="form-control" id="inputEmail4" placeholder="City">
+        <input type="text" class="form-control" name="city" placeholder="City" [(ngModel)]="city"> <!--// CITY-->
       </div>
       <div class="form-group col-md-3">
-        <input type="password" class="form-control" id="inputPassword4" placeholder="State">
+        <input type="text" class="form-control" name="state" placeholder="State" [(ngModel)]="state"> <!--// STATE-->
       </div>
       <div class="form-group col-md-3">
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Pin Code">
+        <input type="text" class="form-control" name="pincode" placeholder="Pin Code" [(ngModel)]="pincode">
+        <!--// PIN CODE-->
       </div>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="services" placeholder="Add business services (separated by comma (,)">
+      <input type="text" class="form-control" name="services1"
+             placeholder="Add business services (separated by comma ( , )" [(ngModel)]="services1">
     </div>
     <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
-      </div>
+      <input type="text" class="form-control" name="services2"
+             placeholder="Add more business services (separated by comma ( , )" [(ngModel)]="services2">
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <div class="form-group">
+      <textarea class="form-control" name="description" placeholder="Shop description..." rows="4" [(ngModel)]="description"></textarea>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Shop picture</label>
+        <input type="file" class="form-control-file" name="shopPicture" [(ngModel)]="shopPicture" accept="image/x-png, image/jpeg">
+      </div>
+    </form>
+    <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
   </form>
+  <br>
 </div>
