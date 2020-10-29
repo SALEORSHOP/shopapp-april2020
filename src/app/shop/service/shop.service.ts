@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ShopService {
-  urlshop = 'http://localhost:3000/user';
+  urlshop = 'http://localhost:3000/shop';
 
   constructor(private httpClient: HttpClient) { }
 
