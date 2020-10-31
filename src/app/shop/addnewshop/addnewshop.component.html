@@ -56,10 +56,10 @@
         <button class="btn btn-success btn-lg btn-block">Add Shop</button>
       </div> <!--// ADD SHOP BUTTON -->
       <div class="form-group col-md-2">
-        <button class="btn btn-primary btn-lg btn-block">Clear Form</button>
+        <button class="btn btn-primary btn-lg btn-block" (click)="deleteForm(newShop.value)">Clear Form</button>
       </div> <!--// CLEAR SHOP BUTTON -->
       <div class="form-group col-md-5">
-        <button class="btn btn-secondary btn-lg btn-block">Reset Shop</button>
+        <button class="btn btn-secondary btn-lg btn-block" (click)="resetShopForm(newShop.value)">Reset Shop</button>
       </div> <!--// RESET SHOP BUTTON -->
     </div>
   </form>

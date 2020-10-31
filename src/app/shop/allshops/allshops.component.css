@@ -1,0 +1,29 @@
+.config-font {
+  font-size: large;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.style-Config-1 {
+  background-color: #055ada;
+  height: 400px;
+}
+
+.style-Config-2 {
+  background-color: aquamarine;
+  height: 400px;
+}
+
+.style-Config-3 {
+  background-color: lightcoral;
+  height: 400px;
+}
+
+.position-Config {
+  padding-left: 45px;
+}
+
+.pos-Config-2 {
+  padding-left: 883px;
+  background-color: white;
+  border-color: white;
+}

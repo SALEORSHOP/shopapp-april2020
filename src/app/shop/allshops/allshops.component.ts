@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./allshops.component.css']
 })
 export class AllshopsComponent implements OnInit {
+  searchString = '';
 
   constructor() {
   }
