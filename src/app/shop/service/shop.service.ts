@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {Shop} from '../../models/shop';
-import {Observable} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Shop } from '../../models/shop';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +17,9 @@ export class ShopService {
     return this.httpClient.get(this.urlshop);
   }
 
-  constructor(private httpClient: HttpClient) {
+  getShopById = (id) => {
+    return this.httpClient.get(this.urlshop + '/' + id);
   }
+
+  constructor(private httpClient: HttpClient) { }
 }
