@@ -13,6 +13,10 @@ export class ShopService {
     return this.httpClient.post<Shop>(this.urlshop, shop);
   }
 
+  getAllShops = () => {
+    return this.httpClient.get(this.urlshop);
+  }
+
   constructor(private httpClient: HttpClient) {
   }
 }

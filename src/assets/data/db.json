@@ -55,6 +55,22 @@
       "userGender": "he",
       "userEmail": "storageribeiro2@gmail.com",
       "id": 7
+    },
+    {
+      "userType": "Visitor Type...",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "RIBEIRO",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 8
+    },
+    {
+      "userType": "Visitor Type...",
+      "firstName": "MARCELO ALEXANDRE DE",
+      "lastName": "BARROS",
+      "userGender": "he",
+      "userEmail": "storageribeiro2@gmail.com",
+      "id": 9
     }
   ],
   "shop": [
