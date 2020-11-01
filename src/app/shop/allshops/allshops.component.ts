@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ShopService} from '../service/shop.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-allshops',
@@ -11,8 +12,7 @@ export class AllshopsComponent implements OnInit {
 
   shops: any = [];
 
-  constructor(private shopService: ShopService) {
-  }
+  constructor(private shopService: ShopService, private router: Router) { }
 
   ngOnInit(): void {
     this.shopService.getAllShops().subscribe(response => {
@@ -23,4 +23,8 @@ export class AllshopsComponent implements OnInit {
     });
   }
 
+  shopDetailPage = (shop) => {
+    console.log(shop);
+    this.router.navigate(['/shopdetails', shop.id]);
+  }
 }

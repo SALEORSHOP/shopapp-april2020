@@ -28,3 +28,13 @@
 .mt-0 {
   margin-top: 10px !important;
 }
+
+.activeLink {
+  cursor: pointer;
+}
+
+.activeLink:hover {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
