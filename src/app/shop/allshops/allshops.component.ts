@@ -9,7 +9,7 @@ import {ShopService} from '../service/shop.service';
 export class AllshopsComponent implements OnInit {
   searchString = '';
 
-  shop: any = [];
+  shops: any = [];
 
   constructor(private shopService: ShopService) {
   }
@@ -17,6 +17,7 @@ export class AllshopsComponent implements OnInit {
   ngOnInit(): void {
     this.shopService.getAllShops().subscribe(response => {
       console.log(response);
+      this.shops = response;
     }, error => {
       console.log(error);
     });
