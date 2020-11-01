@@ -11,38 +11,40 @@
     </div> <!--// SHOP OWNER-->
     <div class="form-group">
       <input type="text" name="shopName" placeholder="Shop Name..." [(ngModel)]="shopName"
-             class="form-control container">
+             class="form-control container" required>
     </div> <!--// SHOP NAME-->
     <div class="form-group">
-      <input type="text" class="form-control" name="address1" placeholder="Address" [(ngModel)]="address1">
+      <input type="text" class="form-control" name="address1" placeholder="Address" [(ngModel)]="address1" required>
 
     </div> <!--// ADDRESS 1-->
     <div class="form-group">
-      <input type="text" class="form-control" name="address2" placeholder="Complement - Address" [(ngModel)]="address2">
+      <input type="text" class="form-control" name="address2" placeholder="Complement - Address" [(ngModel)]="address2"
+             required>
     </div>  <!--// ADDRESS 2-->
-    <div class="form-row">
+    <div class="form-row"> <!-- CITY, STATE, PINCODE -->
       <div class="form-group col-md-6">
-        <input type="text" class="form-control" name="city" placeholder="City" [(ngModel)]="city"> <!--// CITY-->
+        <input type="text" class="form-control" name="city" placeholder="City" [(ngModel)]="city" required>
+        <!--// CITY-->
       </div> <!--// CITY -->
       <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="state" placeholder="State" [(ngModel)]="state">
+        <input type="text" class="form-control" name="state" placeholder="State" [(ngModel)]="state" required>
       </div> <!--// STATE -->
       <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="pincode" placeholder="Pin Code" [(ngModel)]="pincode">
+        <input type="text" class="form-control" name="pincode" placeholder="Pin Code" [(ngModel)]="pincode" required>
 
       </div> <!--// PIN CODE -->
-    </div>
+    </div> <!-- CITY, STATE, PINCODE -->
     <div class="form-group">
       <input type="text" class="form-control" name="services1"
-             placeholder="Add business services (separated by comma ( , )" [(ngModel)]="services1">
+             placeholder="Add business services (separated by comma ( , )" [(ngModel)]="services1" required>
     </div> <!--// SHOP SERVICE 1 -->
     <div class="form-group">
       <input type="text" class="form-control" name="services2"
-             placeholder="Add more business services (separated by comma ( , )" [(ngModel)]="services2">
+             placeholder="Add more business services (separated by comma ( , )" [(ngModel)]="services2" required>
     </div> <!--// SHOP SERVICE 2 -->
     <div class="form-group">
       <textarea class="form-control" name="description" placeholder="Shop description..." rows="4"
-                [(ngModel)]="description"></textarea>
+                [(ngModel)]="description" required></textarea>
     </div> <!--// SHOP DESCRIPTION -->
     <form>
       <div class="form-group">
@@ -53,7 +55,7 @@
     </form> <!--// ADD PICTURE -->
     <div class="form-row">
       <div class="form-group col-md-5">
-        <button class="btn btn-success btn-lg btn-block">Add Shop</button>
+        <button class="btn btn-success btn-lg btn-block" [disabled]="!newShop.valid">Add Shop</button>
       </div> <!--// ADD SHOP BUTTON -->
       <div class="form-group col-md-2">
         <button class="btn btn-primary btn-lg btn-block" (click)="deleteForm(newShop.value)">Clear Form</button>
