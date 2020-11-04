@@ -1,0 +1,21 @@
+.invisible {
+  visibility: hidden;
+}
+
+.displayConfig {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.imgConfig {
+  width: 1080px;
+  height: 400px;
+}
+
+/* resize images */
+.imgConfig img {
+  width: auto;
+  height: auto;
+}

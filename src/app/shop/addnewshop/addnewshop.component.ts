@@ -19,7 +19,7 @@ export class AddnewshopComponent implements OnInit {
   services2: string;
   description: string;
   shopPicture: string;
-  shopOwner: 'ShopOwner';
+  shopOwner: string;
 
   constructor(private shopService: ShopService) {
   }

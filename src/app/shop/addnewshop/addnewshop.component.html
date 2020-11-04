@@ -1,13 +1,13 @@
+<br>
 <div class="container">
-  <div class="jumbotron jumbotron-fluid">
+  <div>
     <div class="container">
-      <h1 class="display-4">Add New Shop</h1>
-      <p class="lead">This is a modified jumbotron that ...</p>
+      <img class="imgConfig" src="assets/shopimages/addnewshop.jpg" alt=""><br>
     </div>
   </div>
   <form #newShop="ngForm" (ngSubmit)="addNewShop(newShop.value)">
     <div class="form-group">
-      <input type="text" name="ShopOwner" [(ngModel)]="shopOwner" class="form-control" readonly>
+      <input type="text" name="ShopOwner" [(ngModel)]="shopOwner" class="form-control invisible" readonly>
     </div> <!--// SHOP OWNER-->
     <div class="form-group">
       <input type="text" name="shopName" placeholder="Shop Name..." [(ngModel)]="shopName"
